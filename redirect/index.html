@@ -1,207 +1,322 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR" dir="ltr">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Redirect</title>
-  <style>
-    html,
-    body {
-      padding: 0;
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    h1 {
-      font-size: 42px;
-    }
-
-    a {
-      color: #555;
-      text-decoration: none;
-    }
-
-    p {
-      line-height: 1.5;
-      font-size: 18px;
-    }
-
-    .big {
-      font-size: 22px;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    .mt-3 {
-      margin-top: 2rem;
-    }
-
-    .fs-18px {
-      font-size: 18px;
-    }
-
-    .hl {
-      color: rgb(141, 41, 196);
-    }
-
-    .banner {
-      font-size: 2vw;
-      background-color: rgb(255, 0, 0);
-      font-family: sans-serif;
-      font-weight: bold;
-      color: #fff;
-    }
-
-    .disclaimer {
-      color: #999;
-    }
-
-    .crossed {
-      text-decoration: line-through;
-      color: rgb(255, 0, 0);
-    }
-
-    .btn {
-      background-color: rgb(141, 41, 196);
-      border-radius: 4px;
-      display: block;
-      color: #fff;
-      font-weight: 600;
-      font-size: 3vw;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 24px 28px;
-      text-decoration: none;
-      box-shadow: 1px 2px 8px #999;
-    }
-
-    .new-price {
-      color: rgb(0, 184, 0);
-      text-shadow: 0 2px 4px rgba(0, 222, 0, 0.5);
-      font-size: 32px;
-    }
-
-    @media (min-width: 600px) {
-      .py-lg-1 {
-        padding-bottom: 0.75rem;
-        padding-top: 0.75rem;
-      }
-
-      .px-lg-20 {
-        padding-left: 20%;
-        padding-right: 20%;
-      }
-
-      .btn {
-        max-width: 450px;
-        font-size: 1.25vw;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .banner {
-        font-size: 3.75vw;
-      }
-
-      .py-sm-1 {
-        padding-bottom: 0.75rem;
-        padding-top: 0.75rem;
-      }
-
-      .px-sm-2 {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-
-      .btn {
-        max-width: 75%;
-      }
-      .alt {
-        font-size: 4vw;
-      }
-
-      h1 {
-        font-size: 5vw;
-      }
-    }
-  </style>
-
-</head>
-
-<body>
-  <div class="banner py-lg-1 py-sm-1 center white">
-    Cupom de desconto ativado!
-  </div>
-  <section class="px-lg-20 px-sm-2 center">
-    <br>
-    <h1>
-      Parabéns, foi selecionado e acaba de ganhar <span class="hl">R$ 30,00 de desconto</span> no Protocolo Zero Barriga!
-    </h1>
-    <hr class="mt-3">
-    <p class="mt-3"><strong>Parabéns por ter chegado até aqui!</strong></p>
-    <p>Eu não quero que o dinheiro seja um problema quando se trata de alcançar o corpo ideal.</p>
-    <p>Portanto, para cada 50 pessoas que visitam nossa página, 1 delas é selecionada para receber uma oferta especial.</p>
-    <p>E parece que desta vez foi você!</p>
-    <p>Por isso, você terá a oportunidade de adquirir <strong>o Protocolo Zero Barriga com um desconto de R$ 30,00</strong></p>
-    <h1>De <span class="crossed">R$ 97,00</span> por <span class="new-price">R$ 67,00</span></h1>
-    <a class="btn alt mt-3" href="https://pay.kiwify.com.br/v1P8sl8">
-      SIM! QUERO R$ 30,00 DE DESCONTO
-    </a>
-    <br />
-    <hr class="mt-3">
-    <p class="mt-3">Essa opção abrirá uma nova etapa em sua vida...</p>
-    <p><strong>Uma vida completamente cheia de prazeres!</strong></p>
-    <p>
-      Imagine que você descubra um segredo para transformar seu corpo enquanto elimina o estresse e a ansiedade de sua vida.
-    </p>
-    <p>
-      Imagine como a sua vida vai melhorar, vai ficar muito mais feliz, mais confiante e todos os outros benefícios positivos que o Protocolo Zero Barriga vai trazer para a sua vida...
-    </p>
-    <p>
-    RESULTADOS QUE NÃO ENCONTRA EM NENHUM OUTRO LUGAR...
-    </p>
-    <a class="btn mt-3" href="https://pay.kiwify.com.br/v1P8sl8">
-      SIM! QUERO OBTER ACESSO!
-    </a>
-    <br /><br />
-  </section>
-<footer class="center px-lg-20 py-lg-1 py-sm-1 px-sm-2 white">
-  <p><strong>Copyright 2022®</strong><br />Todos os direitos reservados.</p>
-    <div class="flex" style="justify-content:center;">
-    <a id="termos" href="#">
-      Térmos de uso
-    </a>&nbsp;|&nbsp;
-    <a id="privacidade" href="#">
-      Políticas de Privacidade
-    </a>
-  </div>
-
- <script>
-    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com","https://go.hotmart.com"];
-
-    function getParams() {
-        let t = "",
-            e = window.top.location.href,
-            r = new URL(e);
-        if (null != r) {
-            let a = r.searchParams.get("utm_source"),
-                n = r.searchParams.get("utm_medium"),
-                o = r.searchParams.get("utm_campaign"),
-                m = r.searchParams.get("utm_term"),
-                c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&src=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-        }
-        return t
-    }! function() {
-        var t = new URLSearchParams(window.location.search);
-        t.toString() && document.querySelectorAll("a").forEach(function(e) {
-            for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-        })
-}();
+	<meta charset="UTF-8">
+		<title>Green Aviator &#8211; A melhor estratégia do mercado!</title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel="alternate" type="application/rss+xml" title="Feed para Green Aviator &raquo;" href="https://aviatorshark.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Green Aviator &raquo;" href="https://aviatorshark.com/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/aviatorshark.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
 </script>
-</body>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://aviatorshark.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://aviatorshark.com/wp-includes/css/classic-themes.min.css?ver=1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='https://aviatorshark.com/wp-content/themes/hello-elementor/style.min.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://aviatorshark.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://aviatorshark.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.7.0' media='all' />
+<link rel='stylesheet' id='elementor-post-9-css' href='https://aviatorshark.com/wp-content/uploads/elementor/css/post-9.css?ver=1661429706' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://aviatorshark.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://aviatorshark.com/wp-content/plugins/pro-elements/assets/css/frontend-lite.min.css?ver=3.6.4' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://aviatorshark.com/wp-content/uploads/elementor/css/global.css?ver=1661429706' media='all' />
+<link rel='stylesheet' id='elementor-post-785-css' href='https://aviatorshark.com/wp-content/uploads/elementor/css/post-785.css?ver=1671022936' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CExo+2%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.1.1' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://aviatorshark.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://aviatorshark.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://aviatorshark.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
+<script src='https://aviatorshark.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script src='https://aviatorshark.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://aviatorshark.com/wp-json/" /><link rel="alternate" type="application/json" href="https://aviatorshark.com/wp-json/wp/v2/pages/785" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aviatorshark.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://aviatorshark.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel="canonical" href="https://aviatorshark.com/" />
+<link rel='shortlink' href='https://aviatorshark.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://aviatorshark.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faviatorshark.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://aviatorshark.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faviatorshark.com%2F&#038;format=xml" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W9HQV53');</script>
+<!-- End Google Tag Manager -->
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '648356560038439');
+fbq('init', '1277963899674496');
+fbq('track', 'PageView');
+</script>
+            <link rel="icon" href="https://aviatorshark.com/wp-content/uploads/2022/08/cropped-aviator-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://aviatorshark.com/wp-content/uploads/2022/08/cropped-aviator-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://aviatorshark.com/wp-content/uploads/2022/08/cropped-aviator-180x180.png" />
+<meta name="msapplication-TileImage" content="https://aviatorshark.com/wp-content/uploads/2022/08/cropped-aviator-270x270.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body data-rsssl=1 class="home page-template page-template-elementor_canvas page page-id-785 elementor-default elementor-template-canvas elementor-kit-9 elementor-page elementor-page-785">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9HQV53"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-post" data-elementor-id="785" class="elementor elementor-785">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-25e170ba elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="25e170ba" data-element_type="section" id="aparecer1" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6811ec0b" data-id="6811ec0b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7c0d430c elementor-widget elementor-widget-heading" data-id="7c0d430c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.7.0 - 08-08-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">RESULTADOS COM A ESTRATÉGIA!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-250aaf3f elementor-widget elementor-widget-heading" data-id="250aaf3f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Veja os resultados dos nossos alunos.</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4a128854 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4a128854" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-48fe3293" data-id="48fe3293" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-688030c1 elementor-widget elementor-widget-image" data-id="688030c1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.7.0 - 08-08-2022 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img decoding="async" width="606" height="1024" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-6-1-606x1024.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-6-1-606x1024.png 606w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-6-1-177x300.png 177w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-6-1-768x1299.png 768w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-6-1-908x1536.png 908w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-6-1.png 1000w" sizes="(max-width: 606px) 100vw, 606px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7375cff7" data-id="7375cff7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5344cacd elementor-widget elementor-widget-image" data-id="5344cacd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="606" height="1024" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-5-606x1024.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-5-606x1024.png 606w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-5-177x300.png 177w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-5-768x1299.png 768w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-5-908x1536.png 908w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-5.png 1000w" sizes="(max-width: 606px) 100vw, 606px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1eea3ebe" data-id="1eea3ebe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1120cb2f elementor-widget elementor-widget-image" data-id="1120cb2f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="606" height="1024" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-3-1-606x1024.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-3-1-606x1024.png 606w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-3-1-177x300.png 177w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-3-1-768x1299.png 768w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-3-1-908x1536.png 908w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-3-1.png 1000w" sizes="(max-width: 606px) 100vw, 606px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4a6251b7" data-id="4a6251b7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-13aae7b8 elementor-widget elementor-widget-image" data-id="13aae7b8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="606" height="1024" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-2-606x1024.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-2-606x1024.png 606w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-2-177x300.png 177w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-2-768x1299.png 768w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-2-908x1536.png 908w, https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-2.png 1000w" sizes="(max-width: 606px) 100vw, 606px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<div class="elementor-element elementor-element-71f7c299 elementor-align-center x elementor-widget elementor-widget-button" data-id="71f7c299" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://pay.kiwify.com.br/MYXkhEz" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-trophy"></i>			</span>
+						<span class="elementor-button-text">QUERO A SALA VIP!!</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7ac85e9d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ac85e9d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3273cac3" data-id="3273cac3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-16d87e09 elementor-widget elementor-widget-html" data-id="16d87e09" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<link rel="preload" href="https://scripts.converteai.net/42d87094-955a-49ba-b73c-293c072149dc/players/62f2dcb2698a9200099caaf2/player.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+<link rel="preload" href="https://images.converteai.net/42d87094-955a-49ba-b73c-293c072149dc/players/62f2dcb2698a9200099caaf2/thumbnail.jpg" as="image">
+<link rel="preload" href="https://cdn.converteai.net/42d87094-955a-49ba-b73c-293c072149dc/62f2dbc987604a000918082b/playlist.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5ed0ac8b elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="5ed0ac8b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6f1a2af9" data-id="6f1a2af9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-1eabd989 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1eabd989" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1fe199d6" data-id="1fe199d6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-65f958e1 elementor-widget elementor-widget-image" data-id="65f958e1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="512" height="512" src="https://aviatorshark.com/wp-content/uploads/2022/10/unnamed.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://aviatorshark.com/wp-content/uploads/2022/10/unnamed.png 512w, https://aviatorshark.com/wp-content/uploads/2022/10/unnamed-300x300.png 300w, https://aviatorshark.com/wp-content/uploads/2022/10/unnamed-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-2e1840cd elementor-widget elementor-widget-heading" data-id="2e1840cd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Me chama no <span style="color:#3BF322">TELEGRAM </span>que eu vou te ensinar o passo a passo para você colocar <span style="color:#3BF322">R$200 todos os dias</span> no seu bolso...
+</h1>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<div class="elementor-element elementor-element-7f5287ad elementor-widget elementor-widget-heading" data-id="7f5287ad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">RESULTADOS DO PESSOAL:</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-894e02c elementor-mobile-align-center animated-slow elementor-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="894e02c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;pulse&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://api.whatsapp.com/send?phone=5511988982395&#038;text=El%20jogador%20tem%20como%20me%20dar%20uma%20vaga?" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
+						<span class="elementor-button-text">QUERO GANHAR R$200!</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2d94df84 elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="2d94df84" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;navigation&quot;:&quot;dots&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:11,&quot;sizes&quot;:[]},&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.7.0 - 08-08-2022 */
+.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>		<div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper">
+								<div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-6.webp" alt="Mask-group-6.webp" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-3.webp" alt="Mask-group-3.webp" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-1.webp" alt="Mask-group-1.webp" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-4-1.png" alt="Mask-group-4-1.png" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-3-1-1.png" alt="Mask-group-3-1.png" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group-2-1-1.png" alt="Mask-group-2-1-1.png" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://aviatorshark.com/wp-content/uploads/2022/10/Mask-group.webp" alt="Mask-group.webp" /></figure></div>			</div>
+												<div class="swiper-pagination"></div>
+													</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fdfc398 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fdfc398" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4072507b" data-id="4072507b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3dac3240 elementor-mobile-align-center animated-slow elementor-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="3dac3240" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;pulse&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://api.whatsapp.com/send?phone=5511988982395&#038;text=El%20jogador%20tem%20como%20me%20dar%20uma%20vaga?" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
+						<span class="elementor-button-text">QUERO GANHAR R$200!</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-69e1bfd5 elementor-widget elementor-widget-text-editor" data-id="69e1bfd5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.7.0 - 08-08-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<div id="1652379248398" class="sitebuilder-element-container slow none animated" data-v-74abd35e="" data-v-cb975186="" data-tag="h2">
+<div data-v-74abd35e="">
+<p class="clean-text-css"><span class="line-height-aqui">&nbsp;© 2022 &#8211;&nbsp; Todos os Direitos Reservados<br><br><span style="font-weight: var( --e-global-typography-text-font-weight );">ATENÇÃO:&nbsp; Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</span><br></span></p></div></div>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		<script type='text/javascript' async src='https://d335luupugsy2.cloudfront.net/js/loader-scripts/5f369ee8-18af-4db5-adaf-a964937f664d-loader.js'></script><script>
+
+    let prefix = ["https://pay.kiwify.com.br"];
+
+ 
+
+function getParams() {
+
+    let t = "",
+
+        e = window.top.location.href,
+
+        r = new URL(e);
+
+    if (null != r) {
+
+        let a = r.searchParams.get("utm_source"),
+
+            n = r.searchParams.get("utm_medium"),
+
+            o = r.searchParams.get("utm_campaign"),
+
+            m = r.searchParams.get("utm_term"),
+
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+
+    }
+
+    return t
+
+}! function() {
+
+    var t = new URLSearchParams(window.location.search);
+
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+
+    })
+
+}(); </script>            <link rel='stylesheet' id='e-animations-css' href='https://aviatorshark.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.7.0' media='all' />
+<script src='https://aviatorshark.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
+<script src='https://aviatorshark.com/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=3.6.4' id='elementor-pro-webpack-runtime-js'></script>
+<script src='https://aviatorshark.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.7.0' id='elementor-webpack-runtime-js'></script>
+<script src='https://aviatorshark.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.7.0' id='elementor-frontend-modules-js'></script>
+<script src='https://aviatorshark.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script src='https://aviatorshark.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='https://aviatorshark.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>
+<script src='https://aviatorshark.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/aviatorshark.com\/wp-admin\/admin-ajax.php","nonce":"667734312a","urls":{"assets":"https:\/\/aviatorshark.com\/wp-content\/plugins\/pro-elements\/assets\/","rest":"https:\/\/aviatorshark.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/aviatorshark.com\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src='https://aviatorshark.com/wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=3.6.4' id='elementor-pro-frontend-js'></script>
+<script src='https://aviatorshark.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://aviatorshark.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.7.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"page-transitions":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/aviatorshark.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":785,"title":"Green%20Aviator%20%E2%80%93%20A%20melhor%20estrat%C3%A9gia%20do%20mercado%21","excerpt":"","featuredImage":false}};
+</script>
+<script src='https://aviatorshark.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.7.0' id='elementor-frontend-js'></script>
+<script src='https://aviatorshark.com/wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=3.6.4' id='pro-elements-handlers-js'></script>
+	</body>
 </html>
